@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a6b62;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.equals {
+  grid-column: 4 / span 1;
+  grid-row: 5 / span 1;
+  background-color: #00ff00;
+  color: #222;
+}
+
+.made-by {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: white;
+}
